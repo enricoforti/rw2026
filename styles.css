@@ -77,33 +77,93 @@ a {
 }
 
 .hero {
-  min-height: 92vh;
+  background:
+    radial-gradient(circle at 18% 20%, rgba(255, 255, 255, 0.94), rgba(255, 255, 255, 0) 34%),
+    radial-gradient(circle at 80% 36%, rgba(255, 206, 227, 0.3), rgba(255, 206, 227, 0) 42%),
+    linear-gradient(135deg, #f5f5f5 0%, #fbfaf7 52%, #f1f2f4 100%);
+  min-height: 0;
   overflow: hidden;
   position: relative;
 }
 
-.hero img {
+.hero-animation {
   height: 100%;
   inset: 0;
-  object-fit: cover;
   position: absolute;
   width: 100%;
 }
 
-.hero-shade {
+.hero-animation svg {
+  height: 100%;
+  opacity: 0.9;
+  width: 100%;
+}
+
+.mesh path {
+  animation: driftLines 18s ease-in-out infinite alternate;
+  fill: none;
+  stroke: url(#threadLine);
+  stroke-linecap: round;
+  stroke-width: 2;
+}
+
+.mesh-two path {
+  animation-duration: 22s;
+  animation-direction: alternate-reverse;
+  opacity: 0.74;
+  stroke-width: 1.5;
+}
+
+.nodes circle {
+  animation: pulseNodes 5.5s ease-in-out infinite alternate;
+  fill: rgba(255, 255, 255, 0.72);
+  stroke: rgba(255, 133, 187, 0.18);
+  stroke-width: 1.5;
+}
+
+.nodes-two circle {
+  animation-delay: 1.2s;
+  fill: rgba(255, 206, 227, 0.38);
+}
+
+.hero::after {
   background:
-    linear-gradient(90deg, rgba(2, 26, 84, 0.78), rgba(2, 26, 84, 0.44) 42%, rgba(2, 26, 84, 0.08) 75%),
-    linear-gradient(0deg, rgba(245, 245, 245, 0.22), rgba(245, 245, 245, 0));
+    linear-gradient(90deg, rgba(245, 245, 245, 0.96) 0%, rgba(245, 245, 245, 0.84) 40%, rgba(245, 245, 245, 0.5) 72%, rgba(245, 245, 245, 0.3) 100%),
+    linear-gradient(0deg, rgba(245, 245, 245, 0.5), rgba(245, 245, 245, 0));
+  content: "";
   inset: 0;
+  pointer-events: none;
   position: absolute;
 }
 
+@keyframes driftLines {
+  from {
+    transform: translate3d(-18px, 8px, 0) scale(1.02);
+  }
+
+  to {
+    transform: translate3d(24px, -12px, 0) scale(1.05);
+  }
+}
+
+@keyframes pulseNodes {
+  from {
+    opacity: 0.4;
+    transform: scale(0.92);
+  }
+
+  to {
+    opacity: 0.86;
+    transform: scale(1.18);
+  }
+}
+
 .hero-content {
-  color: var(--white);
-  max-width: 780px;
-  padding: 18vh clamp(24px, 7vw, 92px) 18vh;
+  color: var(--ink);
+  max-width: 880px;
+  padding: clamp(136px, 15vh, 176px) clamp(24px, 7vw, 92px) clamp(76px, 11vh, 132px);
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 .eyebrow,
@@ -124,7 +184,7 @@ p {
 }
 
 h1 {
-  font-size: clamp(3.2rem, 5.6vw, 6.4rem);
+  font-size: clamp(3.2rem, 5.2vw, 6rem);
   font-weight: 700;
   line-height: 0.98;
   margin-bottom: 24px;
@@ -143,10 +203,10 @@ h1 {
 }
 
 .hero-meta span {
-  background: rgba(255, 255, 255, 0.16);
-  border: 1px solid rgba(255, 255, 255, 0.28);
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(2, 26, 84, 0.14);
   border-radius: 999px;
-  color: var(--white);
+  color: var(--ink);
   font-size: 0.92rem;
   font-weight: 750;
   padding: 9px 13px;
@@ -460,11 +520,15 @@ h1 {
   }
 
   .hero {
-    min-height: 88vh;
+    min-height: 0;
   }
 
   .hero-content {
-    padding-top: 160px;
+    padding-top: 150px;
+  }
+
+  .nav {
+    justify-content: flex-start;
   }
 
   .intro-grid,
@@ -484,15 +548,20 @@ h1 {
 }
 
 @media (max-width: 620px) {
+  .site-header {
+    padding: 14px 20px;
+  }
+
   .nav {
     gap: 10px 14px;
   }
 
-  .hero {
-    min-height: 760px;
+  .nav a {
+    font-size: 0.86rem;
   }
 
   .hero-content {
+    padding-bottom: 68px;
     padding-left: 20px;
     padding-right: 20px;
     max-width: 100%;
@@ -537,5 +606,12 @@ h1 {
     border-left: 0;
     justify-content: flex-start;
     padding-top: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mesh path,
+  .nodes circle {
+    animation: none;
   }
 }
