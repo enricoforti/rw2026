@@ -43,5 +43,5 @@ Ideas generated during the PDW belong to the participants who developed them. Wh
 
 ## Sources
 
-- Event details: local PDF submission `13111.pdf`
+- AOM Event details: TBC`
 - AOM meeting details: [Academy of Management Annual Meeting](https://www.aom.org/events/annual-meeting/)
