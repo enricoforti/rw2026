@@ -25,7 +25,7 @@ This hackathon-style PDW is designed to catalyze new research on how work is bei
 ## Sponsors
 
 **Primary Sponsor:** OMT  
-**Potential Co-Sponsors:** STR, OB, RM
+**Co-Sponsors:** STR, OB, RM
 
 ## Format and Structure
 
