@@ -1,6 +1,7 @@
 # Reimagining Work: A People and Organizations Hackathon
 
-**Professional Development Workshop at the Academy of Management Annual Meeting in Philadelphia, PA, USA  
+**Professional Development Workshop at the Academy of Management Annual Meeting in Philadelphia, PA, USA**
+
 **PDW date, time, and room:**  Sunday, Aug 2 2026 12:15PM - 3:15PM EDT at Sheraton Philadelphia Downtown Hotel in Liberty Ballroom B
 
 _Please pre-register for the event using [this](https://forms.gle/tUWiKQjf9E8VM5R99) link. Pre-registration is required for table matching, but all AOM attendees are welcome to attend._
