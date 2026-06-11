@@ -2,7 +2,7 @@
 
 **AOM 2026 Professional Development Workshop**  
 **31 July-4 August 2026** at the **Academy of Management Annual Meeting** in **Philadelphia, PA, USA**  
-**PDW date, time, and room:** TBD in the official AOM program
+**PDW date, time, and room:**  Sunday, Aug 2 2026 12:15PM - 3:15PM EDT at Sheraton Philadelphia Downtown Hotel in Liberty Ballroom B
 
 _Pre-registration is required for table matching, but all AOM attendees are welcome to attend._
 
