@@ -4,7 +4,7 @@
 **31 July-4 August 2026** at the **Academy of Management Annual Meeting** in **Philadelphia, PA, USA**  
 **PDW date, time, and room:**  Sunday, Aug 2 2026 12:15PM - 3:15PM EDT at Sheraton Philadelphia Downtown Hotel in Liberty Ballroom B
 
-_Pre-registration is required for table matching, but all AOM attendees are welcome to attend._
+_Please pre-register for the event using [this](https://forms.gle/tUWiKQjf9E8VM5R99) link. Pre-registration is required for table matching, but all AOM attendees are welcome to attend._
 
 This hackathon-style PDW is designed to catalyze new research on how work is being reshaped by three big shifts: algorithm-human interaction in tasks, the growing importance of social and collaborative skills, and the changing geography and form of work. Four panelists open with research seeds, and participants then work in small groups to turn those seeds into research designs, data-method pairings, and concrete next steps for publishable projects.
 
