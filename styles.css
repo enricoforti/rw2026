@@ -373,6 +373,9 @@ h1 {
   flex-direction: column;
   min-height: 280px;
   padding: 24px;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
 }
 
 .seed span {
